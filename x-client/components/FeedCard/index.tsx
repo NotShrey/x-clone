@@ -25,10 +25,18 @@ const FeedCard: React.FC = () => {
             laudantium at dolores aperiam. Eaque, in esse.
           </p>
           <div className="flex justify-between text-xl mt-5 items-center p-2 w-[60%]">
-            <div><BiMessageRounded/></div>
-            <div><FaRetweet/></div>
-            <div><AiOutlineHeart/></div>
-            <div><BiUpload/></div>
+            <div>
+              <BiMessageRounded />
+            </div>
+            <div>
+              <FaRetweet />
+            </div>
+            <div>
+              <AiOutlineHeart />
+            </div>
+            <div>
+              <BiUpload />
+            </div>
           </div>
         </div>
       </div>

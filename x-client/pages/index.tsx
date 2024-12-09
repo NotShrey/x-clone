@@ -7,8 +7,6 @@ import { MdOutlineBookmarks } from "react-icons/md";
 import { CiCircleMore } from "react-icons/ci";
 import FeedCard from "@/components/FeedCard";
 
-
-
 interface TwitterSideButton {
   title: string;
   icon: React.ReactNode;
@@ -71,15 +69,15 @@ export default function Home() {
           </div>
         </div>
         <div className="col-span-6 border-r-[1px] border-l-[1px] border-b-gray-700 h-screen overflow-scroll">
-          <FeedCard/>
-          <FeedCard/>
-          <FeedCard/>
-          <FeedCard/>
-          <FeedCard/>
-          <FeedCard/>
-          <FeedCard/>
-          <FeedCard/>
-          <FeedCard/>
+          <FeedCard />
+          <FeedCard />
+          <FeedCard />
+          <FeedCard />
+          <FeedCard />
+          <FeedCard />
+          <FeedCard />
+          <FeedCard />
+          <FeedCard />
         </div>
         <div className="col-span-3"></div>
       </div>
