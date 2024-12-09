@@ -5,9 +5,9 @@ import { FaHashtag } from "react-icons/fa";
 import { IoNotifications } from "react-icons/io5";
 import { MdOutlineBookmarks } from "react-icons/md";
 import { CiCircleMore } from "react-icons/ci";
-import {Inter}from "next/font/google"
+import FeedCard from "@/components/FeedCard";
 
-const inter = Inter({subsets : ["latin"]})
+
 
 interface TwitterSideButton {
   title: string;
@@ -20,7 +20,7 @@ const sideBarMenuItems: TwitterSideButton[] = [
     icon: <IoMdHome />,
   },
   {
-    title: "Hash",
+    title: "Explore",
     icon: <FaHashtag />,
   },
   {
@@ -47,7 +47,7 @@ const sideBarMenuItems: TwitterSideButton[] = [
 
 export default function Home() {
   return (
-    <div className = {inter.className}>
+    <div>
       <div className="grid grid-cols-12 h-screen w-screen px-60">
         <div className="col-span-3 pt-8 px-4">
           <div className="text-4xl h-fit hover:bg-gray-800 rounded-full p-4 cursor-pointer transition-all w-fit">
@@ -65,10 +65,22 @@ export default function Home() {
                 </li>
               ))}
             </ul>
-            <button className="bg-sky-600 p-3 mt-4 rounded-full w-full font-semibold">Tweet</button>
+            <button className="bg-sky-600 p-3 mt-4 rounded-full w-full font-semibold">
+              Tweet
+            </button>
           </div>
         </div>
-        <div className="col-span-6 border-r-2 border-l-2 border-slate-700"></div>
+        <div className="col-span-6 border-r-[1px] border-l-[1px] border-b-gray-700 h-screen overflow-scroll">
+          <FeedCard/>
+          <FeedCard/>
+          <FeedCard/>
+          <FeedCard/>
+          <FeedCard/>
+          <FeedCard/>
+          <FeedCard/>
+          <FeedCard/>
+          <FeedCard/>
+        </div>
         <div className="col-span-3"></div>
       </div>
     </div>
